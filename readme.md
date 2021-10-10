@@ -8,6 +8,8 @@ Features
 - DataBinding
 - Kotlin
 - MVVM
+- Coroutines
+- Room
 
 ## Features
 
@@ -19,7 +21,8 @@ Features
 
 ## Working 
 
-App uses MVVP architacture pattern
+App uses MVVP architacture pattern and repository design pattern.
+
 There are two main screens in this app. Main FrgamentHome uses the ViewModel to share the data with FragmentHistory.
 
 Web socket is created in MainAcitivity and data from socket is used in HomeActivity via ViewModel. Data form socket is refreshed every 30 seconds. Not all cities are received in one message, the messge is saved in Room db and latest data for every city is retrieved from db.
@@ -31,3 +34,6 @@ In FragmentHistory the data from particular city is retreived and used to displa
 Moving from FragmentHome to FrgamentHistory navigation component is used. 
 
 To display the chart MpAndroidChat library is used in app. 
+
+Database access is done using Repository pattern.
+
