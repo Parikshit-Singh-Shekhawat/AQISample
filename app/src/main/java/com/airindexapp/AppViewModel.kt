@@ -34,9 +34,7 @@ class AppViewModel (app: Application) : AndroidViewModel(app) ,ViewModelListener
     }
 
     fun startSocket(){
-        viewModelScope.launch {
-            WebSocketObject.createSocket(instance);
-        }
+        WebSocketObject.createSocket(instance);
     }
 
     fun stopSocket(){
@@ -49,6 +47,7 @@ class AppViewModel (app: Application) : AndroidViewModel(app) ,ViewModelListener
         if (lastUpdateTime <= 0) {
             lastUpdateTime = currentTime
         }
+        Log.e(TAG, "time diff-${currentTime - lastUpdateTime}")
         if (currentTime - lastUpdateTime >= timeInterval || lastUpdateTime == currentTime) {
             viewModelScope.launch {
                 val arrayTutorialType = object : TypeToken<List<CityDataResponse>>() {}.type
@@ -67,9 +66,10 @@ class AppViewModel (app: Application) : AndroidViewModel(app) ,ViewModelListener
                 }
                 addRecord(newData)
                 getRecords()
+                lastUpdateTime = currentTime
             }
         }
-        lastUpdateTime = currentTime
+
     }
 
      private suspend fun addRecord(data:List<AQIndexTable>){
