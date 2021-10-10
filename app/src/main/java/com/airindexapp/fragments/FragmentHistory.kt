@@ -28,19 +28,7 @@ import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.components.AxisBase
 
 
-
-
-
-
-
-
-
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "cityName"
-private const val ARG_PARAM2 = "param2"
-
 /**
  * A simple [Fragment] subclass.
  * Use the [FragmentHistory.newInstance] factory method to

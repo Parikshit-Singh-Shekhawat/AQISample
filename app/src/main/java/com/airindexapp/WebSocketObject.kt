@@ -36,7 +36,6 @@ object WebSocketObject {
 
     fun closeSocket(){
         webSocket?.close(1000,null)
-
     }
 
 }

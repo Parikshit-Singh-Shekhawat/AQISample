@@ -6,7 +6,6 @@ import androidx.lifecycle.*
 import com.airindexapp.db.AQIndexTable
 import com.airindexapp.db.AppDatabase
 import com.airindexapp.db.DatabaseRepository
-import com.airindexapp.model.CityDataModel
 import com.airindexapp.model.CityDataResponse
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
