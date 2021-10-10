@@ -1,0 +1,34 @@
+com/airindexapp/BuildConfig.java
+ com.airindexapp.BuildConfig
+com/airindexapp/db/AQIDao_Impl.java
+ com.airindexapp.db.AQIDao_Impl
+ com.airindexapp.db.AQIDao_Impl$1
+ com.airindexapp.db.AQIDao_Impl$2
+ com.airindexapp.db.AQIDao_Impl$3
+ com.airindexapp.db.AQIDao_Impl$4
+ com.airindexapp.db.AQIDao_Impl$5
+com/airindexapp/DataBindingTriggerClass.java
+ com.airindexapp.DataBindingTriggerClass
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/airindexapp/DataBinderMapperImpl.java
+ com.airindexapp.DataBinderMapperImpl
+ com.airindexapp.DataBinderMapperImpl$InnerBrLookup
+ com.airindexapp.DataBinderMapperImpl$InnerLayoutIdLookup
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/airindexapp/BR.java
+ com.airindexapp.BR
+com/airindexapp/databinding/HomeRecyclerItemBinding.java
+ com.airindexapp.databinding.HomeRecyclerItemBinding
+com/airindexapp/databinding/FragmentHomeBinding.java
+ com.airindexapp.databinding.FragmentHomeBinding
+com/airindexapp/databinding/FragmentHomeBindingImpl.java
+ com.airindexapp.databinding.FragmentHomeBindingImpl
+com/airindexapp/db/AppDatabase_Impl.java
+ com.airindexapp.db.AppDatabase_Impl
+ com.airindexapp.db.AppDatabase_Impl$1
+com/airindexapp/databinding/HomeRecyclerItemBindingImpl.java
+ com.airindexapp.databinding.HomeRecyclerItemBindingImpl

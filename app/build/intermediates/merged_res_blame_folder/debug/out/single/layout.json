@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/sds-s.parikshit/Documents/AirIndexApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/home_recycler_item.xml",
+        "source": "/Users/sds-s.parikshit/Documents/AirIndexApp/app/src/main/res/layout/home_recycler_item.xml"
+    },
+    {
+        "merged": "/Users/sds-s.parikshit/Documents/AirIndexApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/Users/sds-s.parikshit/Documents/AirIndexApp/app/src/main/res/layout/fragment_home.xml"
+    }
+]
