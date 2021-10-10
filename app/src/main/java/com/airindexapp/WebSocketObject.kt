@@ -12,14 +12,13 @@ object WebSocketObject {
 
     val  socketUrl:String?
     lateinit var listener:Websocket
+    lateinit var mClient:OkHttpClient
     init {
          socketUrl="ws://city-ws.herokuapp.com/";
         println("WebSocket invokded.")
     }
 
-    val mClient = OkHttpClient.Builder()
-        .pingInterval(15, TimeUnit.SECONDS) // Setting PING Frame Transmit Interval
-        .build()
+
     val request = Request.Builder()
         .url(socketUrl)
         .build()
@@ -27,7 +26,9 @@ object WebSocketObject {
     var webSocket:WebSocket?=null
 
     fun createSocket(viewModelListener: ViewModelListener){
-
+            mClient = OkHttpClient.Builder()
+            .pingInterval(15, TimeUnit.SECONDS) // Setting PING Frame Transmit Interval
+            .build()
             listener = Websocket(viewModelListener)
             webSocket = mClient.newWebSocket(request, listener)
             mClient.dispatcher().executorService().shutdown()
@@ -36,6 +37,9 @@ object WebSocketObject {
 
     fun closeSocket(){
         webSocket?.close(1000,null)
+        mClient.connectionPool().evictAll()
+        webSocket=null
+
     }
 
 }
